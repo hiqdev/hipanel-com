@@ -54,5 +54,18 @@
         "psr-4": {
             "hiqdev\\sites\\hipanelcom\\": "src"
         }
-    }
+    },
+    "extra": {
+        "config-plugin": {
+            "params": "src/config/params.php",
+            "hisite": "src/config/hisite.php"
+        }
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
