@@ -8,6 +8,7 @@ hipanel.com
 [![Build Status](https://img.shields.io/travis/hiqdev/hipanel-com.svg)](https://travis-ci.org/hiqdev/hipanel-com)
 [![Scrutinizer Code Coverage](https://img.shields.io/scrutinizer/coverage/g/hiqdev/hipanel-com.svg)](https://scrutinizer-ci.com/g/hiqdev/hipanel-com/)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/hipanel-com.svg)](https://scrutinizer-ci.com/g/hiqdev/hipanel-com/)
+[![Dependency Status](https://www.versioneye.com/php/hiqdev:hipanel-com/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:hipanel-com/dev-master)
 
 ## Installation
 
@@ -32,4 +33,4 @@ to the require section of your composer.json.
 This project is released under the terms of the BSD-3-Clause [license](LICENSE).
 Read more [here](http://choosealicense.com/licenses/bsd-3-clause).
 
-Copyright © 2014-2016, HiQDev (http://hiqdev.com/)
+Copyright © 2016, HiQDev (http://hiqdev.com/)
