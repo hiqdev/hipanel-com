@@ -1,3 +1,11 @@
 <?php
 
-return [];
+return [
+    'components' => [
+        'themeManager' => [
+            'pathMap' => [
+                '$themedViewPaths' => ['@hiqdev/sites/hipanelcom/views'],
+            ],
+        ],
+    ],
+];
