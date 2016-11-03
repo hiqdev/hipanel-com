@@ -2,7 +2,7 @@
 
 return [
     'id' => 'hipanel.com',
-    'name' => 'hipanel.com',
+    'name' => 'HiPanel',
     'components' => [
         'themeManager' => [
             'pathMap' => [
