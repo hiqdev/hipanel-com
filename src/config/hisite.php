@@ -1,10 +1,12 @@
 <?php
 
 return [
+    'id' => 'hipanel.com',
+    'name' => 'hipanel.com',
     'components' => [
         'themeManager' => [
             'pathMap' => [
-                '$themedViewPaths' => ['@hiqdev/sites/hipanelcom/views'],
+                '$themedViewPaths' => ['@hipanel/com/views'],
             ],
         ],
     ],

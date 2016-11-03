@@ -4,4 +4,4 @@ package:
     title:          hipanel.com site
     headline:       hipanel.com
     keywords:       hipanel, site
-    namespace:      hiqdev\sites\hipanelcom
+    namespace:      hipanel\com
