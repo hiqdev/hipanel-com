@@ -2,8 +2,12 @@
 
 /* @var $this yii\web\View */
 
-$this->title = Yii::$app->name;
+use hipanel\com\Asset;
 
+$this->title = Yii::$app->name;
+Asset::register($this);
+//$imagePath = Yii::$app->assetManager->getPublishedUrl('@hipanel/com/assets/img');
+$imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
 ?>
 
 <!-- Services Section -->
@@ -61,7 +65,7 @@ $this->title = Yii::$app->name;
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                    <img src="<?= $imagePath ?>/portfolio/roundicons.png" class="img-responsive" alt="">
                 </a>
                 <div class="portfolio-caption">
                     <h4>Dashboard</h4>
@@ -75,7 +79,7 @@ $this->title = Yii::$app->name;
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                    <img src="<?= $imagePath ?>/portfolio/startup-framework.png" class="img-responsive" alt="">
                 </a>
                 <div class="portfolio-caption">
                     <h4>Domain</h4>
@@ -89,7 +93,7 @@ $this->title = Yii::$app->name;
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                    <img src="<?= $imagePath ?>/portfolio/treehouse.png" class="img-responsive" alt="">
                 </a>
                 <div class="portfolio-caption">
                     <h4>Tickets</h4>
@@ -103,7 +107,7 @@ $this->title = Yii::$app->name;
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/golden.png" class="img-responsive" alt="">
+                    <img src="<?= $imagePath ?>/portfolio/golden.png" class="img-responsive" alt="">
                 </a>
                 <div class="portfolio-caption">
                     <h4>Client profile</h4>
@@ -117,7 +121,7 @@ $this->title = Yii::$app->name;
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                    <img src="<?= $imagePath ?>/portfolio/escape.png" class="img-responsive" alt="">
                 </a>
                 <div class="portfolio-caption">
                     <h4>Login</h4>
@@ -131,7 +135,7 @@ $this->title = Yii::$app->name;
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                    <img src="<?= $imagePath ?>/portfolio/dreams.png" class="img-responsive" alt="">
                 </a>
                 <div class="portfolio-caption">
                     <h4>Servers</h4>
@@ -293,7 +297,7 @@ $this->title = Yii::$app->name;
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            <img class="img-circle img-responsive" src="<?= $imagePath ?>/about/1.jpg" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -307,7 +311,7 @@ $this->title = Yii::$app->name;
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            <img class="img-circle img-responsive" src="<?= $imagePath ?>/about/2.jpg" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -321,7 +325,7 @@ $this->title = Yii::$app->name;
                     </li>
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            <img class="img-circle img-responsive" src="<?= $imagePath ?>/about/3.jpg" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -335,7 +339,7 @@ $this->title = Yii::$app->name;
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            <img class="img-circle img-responsive" src="<?= $imagePath ?>/about/4.jpg" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -417,7 +421,7 @@ $this->title = Yii::$app->name;
             </div>
             <div class="col-sm-3">
                 <div class="team-member">
-                    <img src="/img/team/bladeroot.png" class="img-responsive img-circle" alt="" style="height: 200px; width: 200px">
+                    <img src="<?= $imagePath ?>/team/2.jpg" class="img-responsive img-circle" alt="" style="height: 200px; width: 200px">
                     <h4>Yuriy Myronchuk</h4>
                     <p class="text-muted">QA Lead</p>
                     <ul class="list-inline social-buttons">
@@ -445,22 +449,22 @@ $this->title = Yii::$app->name;
         <div class="row">
             <div class="col-md-3 col-sm-6">
                 <a href="#">
-                    <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                    <img src="<?= $imagePath ?>/logos/envato.jpg" class="img-responsive img-centered" alt="">
                 </a>
             </div>
             <div class="col-md-3 col-sm-6">
                 <a href="#">
-                    <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                    <img src="<?= $imagePath ?>/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
                 </a>
             </div>
             <div class="col-md-3 col-sm-6">
                 <a href="#">
-                    <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                    <img src="<?= $imagePath ?>/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
                 </a>
             </div>
             <div class="col-md-3 col-sm-6">
                 <a href="#">
-                    <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                    <img src="<?= $imagePath ?>/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
                 </a>
             </div>
         </div>
