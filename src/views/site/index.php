@@ -211,7 +211,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     <li class="timeline-inverted">
                         <?= Timeline::widget([
                             'title' => Yii::t('hipanel:com', 'NOVEMBER 2014'),
-                            'subTitle' => Yii::t('hipanel:com', 'An {0} is Born', ['hipanel']),
+                            'subTitle' => Yii::t('hipanel:com', 'An {name} is Born', ['name' => Yii::$app->name]),
                             'description' => Yii::t('hipanel:com', ''),
                             'image' => $imagePath . '/about/2.jpg',
                         ]) ?>
