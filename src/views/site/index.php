@@ -6,6 +6,7 @@ use hipanel\com\Asset;
 use hiqdev\themes\agency\widgets\Price;
 use hiqdev\themes\agency\widgets\Screenshot;
 use hiqdev\themes\agency\widgets\Team;
+use hiqdev\themes\agency\widgets\Timeline;
 use yii\helpers\Html;
 
 $this->title = Yii::$app->name;
@@ -192,7 +193,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">About</h2>
+                <h2 class="section-heading"><?= Yii::t('hipanel:com', 'About') ?></h2>
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
         </div>
@@ -200,74 +201,40 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
             <div class="col-lg-12">
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="<?= $imagePath ?>/about/1.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Long time ago...</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
+                        <?= Timeline::widget([
+                            'title' => Yii::t('hipanel:com', 'Long time ago...'),
+                            'subTitle' => Yii::t('hipanel:com', 'Our Humble Beginnings'),
+                            'description' => Yii::t('hipanel:com', ''),
+                            'image' => $imagePath . '/about/1.jpg',
+                        ]) ?>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="<?= $imagePath ?>/about/2.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>NOVEMBER 2014</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
+                        <?= Timeline::widget([
+                            'title' => Yii::t('hipanel:com', 'NOVEMBER 2014'),
+                            'subTitle' => Yii::t('hipanel:com', 'An {0} is Born', ['hipanel']),
+                            'description' => Yii::t('hipanel:com', ''),
+                            'image' => $imagePath . '/about/2.jpg',
+                        ]) ?>
                     </li>
                     <li>
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="<?= $imagePath ?>/about/3.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>DECEMBER 2014</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
+                        <?= Timeline::widget([
+                            'title' => Yii::t('hipanel:com', 'DECEMBER 2014'),
+                            'subTitle' => Yii::t('hipanel:com', 'Transition to Full Service'),
+                            'description' => Yii::t('hipanel:com', ''),
+                            'image' => $imagePath . '/about/3.jpg',
+                        ]) ?>
+                    </li>
+                    <li class="timeline-inverted">
+                        <?= Timeline::widget([
+                            'title' => Yii::t('hipanel:com', 'MARCH 2015'),
+                            'subTitle' => Yii::t('hipanel:com', 'Phase Two Expansion'),
+                            'description' => Yii::t('hipanel:com', ''),
+                            'image' => $imagePath . '/about/4.jpg',
+                        ]) ?>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="<?= $imagePath ?>/about/4.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>MARCH 2015</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>Be Part
-                                <br>Of Our
-                                <br>Story!</h4>
+                            <?= Html::tag('h4', Yii::t('hipanel:com', 'Be Part {br}Of Our{br}Story!', ['br' => '<br>'])) ?>
                         </div>
                     </li>
                 </ul>
@@ -337,8 +304,10 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
-                    laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                <p class="large text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+                    laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+                </p>
             </div>
         </div>
     </div>
