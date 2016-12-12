@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 use hipanel\com\Asset;
+use hiqdev\themes\agency\widgets\Price;
 use hiqdev\themes\agency\widgets\Screenshot;
 use hiqdev\themes\agency\widgets\Team;
 use yii\helpers\Html;
@@ -123,135 +124,65 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Pricing</h2>
+                <h2 class="section-heading"><?php Yii::t('hipanel:com', 'Pricing') ?></h2>
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
         </div>
         <div class="row">
             <!-- Pricing -->
             <div class="col-md-4">
-                <div class="pricing hover-effect">
-                    <div class="pricing-head">
-                        <h3>Start <span>for personal use</span></h3>
-                        <h4><i>$</i>0<i>.00</i> <span> No monthly fee</span></h4>
-                    </div>
-                    <ul class="pricing-content list-unstyled">
-                        <li>
-                            <i class="fa fa-globe"></i> One Domain for free. Every next $0.50 per year
-                        </li>
-                        <li>
-                            <i class="fa fa-cloud"></i> One VDS for free. Every next $2.99 per month
-                        </li>
-                        <li>
-                            <i class="fa fa-server"></i> One server for free. Every next $5.99 per month
-                        </li>
-                        <li>
-                            <i class="fa fa-user"></i> No subclients
-                        </li>
-                        <li>
-                            <i class="fa fa-shopping-cart"></i> Slightly limited DNS and other additional services
-                        </li>
-                        <li>
-                            <i class="fa fa-support"></i> 10 minutes for free. More $30.00 per hour.
-                        </li>
-                    </ul>
-                    <div class="pricing-footer">
-                        <p>
-                            All the power of our panel for free. With reasonable limitations, sorry.
-                            But you can try the panel - no need to pay.
-                        </p>
-                        <a href="#" class="btn btn-default">
-                            Learn more <i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                        <a href="#" class="btn btn-default">
-                            Sign Up <i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
+                <?= Price::widget([
+                    'title' => Yii::t('hipanel:com', 'Start'),
+                    'subTitle' => Yii::t('hipanel:com', 'for personal use'),
+                    'price' => Yii::$app->formatter->asCurrency(0, 'USD'),
+                    'subPrice' => Yii::t('hipanel:com', 'No monthly fee'),
+                    'options' => [
+                        ['icon' => 'fa-globe', 'label' => Yii::t('hipanel:com', 'One Domain for free. Every next {0} per year', [Yii::$app->formatter->asCurrency('0.50', 'usd')])],
+                        ['icon' => 'fa-cloud', 'label' => Yii::t('hipanel:com', 'One VDS for free. Every next {}$2.99 per month')],
+                        ['icon' => 'fa-server', 'label' => Yii::t('hipanel:com', 'One server for free. Every next $5.99 per month')],
+                        ['icon' => 'fa-user', 'label' => Yii::t('hipanel:com', 'No subclients')],
+                        ['icon' => 'fa-shoping-cart', 'label' => Yii::t('hipanel:com', 'Slightly limited DNS and other additional services')],
+                        ['icon' => 'fa-support', 'label' => Yii::t('hipanel:com', '10 minutes for free. More $30.00 per hour.')],
+                    ],
+                    'footer' => Yii::t('hipanel:com', 'All the power of our panel for free. With reasonable limitations, sorry. But you can try the panel - no need to pay.')
+                ]) ?>
             </div>
             <div class="col-md-4">
-                <!--div class="pricing pricing-active hover-effect">
-                    <div class="pricing-head pricing-head-active" -->
-                <div class="pricing hover-effect">
-                    <div class="pricing-head pricing-head-active">
-                        <h3>Easy <span>for resellers</span></h3>
-                        <h4><i>$</i>9<i>.99</i> <span>Per Month </span></h4>
-                    </div>
-                    <ul class="pricing-content list-unstyled">
-                        <li>
-                            <i class="fa fa-globe"></i> Domain $0.30 per year
-                        </li>
-                        <li>
-                            <i class="fa fa-cloud"></i> VDS, CDN and other cloud services $1.99 per month
-                        </li>
-                        <li>
-                            <i class="fa fa-server"></i> Dedicated Server $4.99
-                        </li>
-                        <li>
-                            <i class="fa fa-user"></i> Up to 999 subclients
-                        </li>
-                        <li>
-                            <i class="fa fa-shopping-cart"></i> Unlimited DNS, Mail and other services
-                        </li>
-                        <li>
-                            <i class="fa fa-support"></i> 1 hour included. More $30.00 per hour.
-                        </li>
-                    </ul>
-                    <div class="pricing-footer">
-                        <p>
-                            Includes personalized site and panel installed at our or your side.
-                            Also we provide SSL certificate for your panel and site.
-                        </p>
-                        <a href="#" class="btn btn-default">
-                            Learn more <i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                        <a href="#" class="btn btn-default">
-                            Sign Up <i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
+                <?= Price::widget([
+                    'title' => Yii::t('hipanel:com', 'Easy'),
+                    'subTitle' => Yii::t('hipanel:com', 'for resellers'),
+                    'price' => Yii::$app->formatter->asCurrency(9.99, 'usd'),
+                    'subPrice' => Yii::t('hipanel:com', 'Per Month'),
+                    'options' => [
+                        ['icon' => 'fa-globe', 'label' => Yii::t('hipanel:com', 'Domain {0} per year', [Yii::$app->formatter->asCurrency('0.30', 'usd')])],
+                        ['icon' => 'fa-cloud', 'label' => Yii::t('hipanel:com', 'VDS, CDN and other cloud services {0} per month', [Yii::$app->formatter->asCurrency('1.99', 'usd')])],
+                        ['icon' => 'fa-server', 'label' => Yii::t('hipanel:com', 'Dedicated Server {0}', [Yii::$app->formatter->asCurrency('4.99', 'usd')])],
+                        ['icon' => 'fa-user', 'label' => Yii::t('hipanel:com', 'Up to 999 subclients')],
+                        ['icon' => 'fa-shoping-cart', 'label' => Yii::t('hipanel:com', 'Unlimited DNS, Mail and other services')],
+                        ['icon' => 'fa-support', 'label' => Yii::t('hipanel:com', '1 hour included. More $30.00 per hour')],
+                    ],
+                    'footer' => Yii::t('hipanel:com', 'All the power of our panel for free. With reasonable limitations, sorry. But you can try the panel - no need to pay.'),
+                    'activeClass' => 'pricing-head-active',
+                ]) ?>
             </div>
             <div class="col-md-4">
-                <div class="pricing hover-effect">
-                    <div class="pricing-head">
-                        <h3>Pro <span>for service providers</span></h3>
-                        <h4><i>$</i>99<i>.99</i><span> Per Month </span></h4>
-                    </div>
-                    <ul class="pricing-content list-unstyled">
-                        <li>
-                            <i class="fa fa-globe"></i> Domain $0.15 per year
-                        </li>
-                        <li>
-                            <i class="fa fa-cloud"></i> VDS, CDN and other cloud services $0.99 per month
-                        </li>
-                        <li>
-                            <i class="fa fa-server"></i> Dedicated Server $3.99 per month
-                        </li>
-                        <li>
-                            <i class="fa fa-user"></i> Unlimited subclients
-                        </li>
-                        <li>
-                            <i class="fa fa-shopping-cart"></i> Unlimited additional services
-                        </li>
-                        <li>
-                            <i class="fa fa-support"></i> Unlimited support
-                        </li>
-                    </ul>
-                    <div class="pricing-footer">
-                        <p>
-                            Includes personalized site and panel.
-                            We'll do all the necessary integration of your infrastructure with our panel.
-                        </p>
-                        <a href="#" class="btn btn-default">
-                            Learn more <i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                        <a href="#" class="btn btn-default">
-                            Sign Up <i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
+                <?= Price::widget([
+                    'title' => Yii::t('hipanel:com', 'Pro'),
+                    'subTitle' => Yii::t('hipanel:com', 'for service providers'),
+                    'price' => Yii::$app->formatter->asCurrency(99.99, 'usd'),
+                    'subPrice' => Yii::t('hipanel:com', 'Per Month'),
+                    'options' => [
+                        ['icon' => 'fa-globe', 'label' => Yii::t('hipanel:com', 'Domain {0} per year', [Yii::$app->formatter->asCurrency('0.15', 'usd')])],
+                        ['icon' => 'fa-cloud', 'label' => Yii::t('hipanel:com', 'VDS, CDN and other cloud services {0} per month', [Yii::$app->formatter->asCurrency('0.99', 'usd')])],
+                        ['icon' => 'fa-server', 'label' => Yii::t('hipanel:com', 'Dedicated Server {0}', [Yii::$app->formatter->asCurrency('3.99', 'usd')])],
+                        ['icon' => 'fa-user', 'label' => Yii::t('hipanel:com', 'Unlimited subclients')],
+                        ['icon' => 'fa-shoping-cart', 'label' => Yii::t('hipanel:com', 'Unlimited additional services')],
+                        ['icon' => 'fa-support', 'label' => Yii::t('hipanel:com', 'Unlimited support')],
+                    ],
+                    'footer' => Yii::t('hipanel:com', 'Includes personalized site and panel. We\'ll do all the necessary integration of your infrastructure with our panel.'),
+                    'activeClass' => 'pricing-head-active',
+                ]) ?>
             </div>
-            <!--//End Pricing -->
         </div>
     </div>
 </section>
