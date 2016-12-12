@@ -67,8 +67,8 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'header' => Yii::t('hipanel:com', 'Dashboard'),
                     'subHeader' => Yii::t('hipanel:com', 'All in one...'),
                     'description' => Yii::t('hipanel:com', 'Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!'),
-                    'previewImage' => $imagePath . '/portfolio/treehouse.png',
-                    'fullImage' => $imagePath . '/portfolio/treehouse-preview.png',
+                    'previewImage' => $imagePath . '/portfolio/dashboard.png',
+                    'fullImage' => $imagePath . '/portfolio/dashboard.png',
                 ]) ?>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
@@ -76,8 +76,8 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'header' => Yii::t('hipanel:com', 'Domain'),
                     'subHeader' => Yii::t('hipanel:com', 'Website Design'),
                     'description' => Yii::t('hipanel:com', ''),
-                    'previewImage' => $imagePath . '/portfolio/treehouse.png',
-                    'fullImage' => $imagePath . '/portfolio/treehouse-preview.png',
+                    'previewImage' => $imagePath . '/portfolio/domain.png',
+                    'fullImage' => $imagePath . '/portfolio/domain.png',
                 ]) ?>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
@@ -85,8 +85,8 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'header' => Yii::t('hipanel:com', 'Customer support'),
                     'subHeader' => Yii::t('hipanel:com', ''),
                     'description' => Yii::t('hipanel:com', ''),
-                    'previewImage' => $imagePath . '/portfolio/treehouse.png',
-                    'fullImage' => $imagePath . '/portfolio/treehouse-preview.png',
+                    'previewImage' => $imagePath . '/portfolio/tickets.png',
+                    'fullImage' => $imagePath . '/portfolio/tickets.png',
                 ]) ?>
             </div>
             <div class="clearfix"></div>
@@ -95,8 +95,8 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'header' => Yii::t('hipanel:com', 'Client profile'),
                     'subHeader' => Yii::t('hipanel:com', ''),
                     'description' => Yii::t('hipanel:com', ''),
-                    'previewImage' => $imagePath . '/portfolio/treehouse.png',
-                    'fullImage' => $imagePath . '/portfolio/treehouse-preview.png',
+                    'previewImage' => $imagePath . '/portfolio/client.png',
+                    'fullImage' => $imagePath . '/portfolio/client.png',
                 ]) ?>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
@@ -104,8 +104,8 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'header' => Yii::t('hipanel:com', 'Login'),
                     'subHeader' => Yii::t('hipanel:com', 'Social login'),
                     'description' => Yii::t('hipanel:com', ''),
-                    'previewImage' => $imagePath . '/portfolio/treehouse.png',
-                    'fullImage' => $imagePath . '/portfolio/treehouse-preview.png',
+                    'previewImage' => $imagePath . '/portfolio/login.png',
+                    'fullImage' => $imagePath . '/portfolio/login.png',
                 ]) ?>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
@@ -113,8 +113,8 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'header' => Yii::t('hipanel:com', 'Servers'),
                     'subHeader' => Yii::t('hipanel:com', ''),
                     'description' => Yii::t('hipanel:com', ''),
-                    'previewImage' => $imagePath . '/portfolio/treehouse.png',
-                    'fullImage' => $imagePath . '/portfolio/treehouse-preview.png',
+                    'previewImage' => $imagePath . '/portfolio/server.png',
+                    'fullImage' => $imagePath . '/portfolio/server.png',
                 ]) ?>
             </div>
         </div>
