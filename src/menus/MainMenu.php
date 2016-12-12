@@ -15,7 +15,6 @@ class MainMenu extends \hiqdev\menumanager\Menu
             ['label' => Yii::t('hipanel:com', 'About'), 'url' => '#about', 'template' => '<a href="{url}" class="page-scroll">{label}</a>'],
             ['label' => Yii::t('hipanel:com', 'Team'), 'url' => '#team', 'template' => '<a href="{url}" class="page-scroll">{label}</a>'],
             ['label' => Yii::t('hipanel:com', 'Contact'), 'url' => '#contact', 'template' => '<a href="{url}" class="page-scroll">{label}</a>'],
-            ['label' => Yii::t('hipanel:com', 'Login'), 'url' => ['/site/login']],
         ];
     }
 }
