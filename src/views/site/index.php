@@ -1,12 +1,15 @@
 <?php
 
 /* @var $this yii\web\View */
+/* @var $contactForm \hisite\models\ContactForm */
 
 use hipanel\com\Asset;
 use hiqdev\themes\agency\widgets\Price;
 use hiqdev\themes\agency\widgets\Screenshot;
 use hiqdev\themes\agency\widgets\Team;
 use hiqdev\themes\agency\widgets\Timeline;
+use yii\bootstrap\ActiveForm;
+use yii\captcha\Captcha;
 use yii\helpers\Html;
 
 $this->title = Yii::$app->name;
@@ -375,24 +378,25 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <form name="sentMessage" id="contactForm" novalidate>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name *" id="name" required
-                                       data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email *" id="email" required
-                                       data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message *" id="message" required
-                                          data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <button type="submit" class="btn btn-xl">Send Message</button>
-                        </form>
+                        <?php $form = ActiveForm::begin([
+                            'id' => 'contact-form',
+                        ]); ?>
+                        <?= $form->field($contactForm, 'name')->textInput(['autofocus' => true, 'placeholder' => $contactForm->getAttributeLabel('name')])->label(false) ?>
+
+                        <?= $form->field($contactForm, 'email')->textInput(['placeholder' => $contactForm->getAttributeLabel('email')])->label(false) ?>
+
+                        <?= $form->field($contactForm, 'subject')->textInput(['placeholder' => $contactForm->getAttributeLabel('subject')])->label(false) ?>
+
+                        <?= $form->field($contactForm, 'body')->textarea(['rows' => 6, 'placeholder' => $contactForm->getAttributeLabel('body')])->label(false) ?>
+
+                        <?= $form->field($contactForm, 'verifyCode')->widget(Captcha::className(), [
+                            'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
+                            'options' => [
+                                'placeholder' => $contactForm->getAttributeLabel('verifyCode'),
+                            ]
+                        ])->label(false) ?>
+                        <?= Html::submitButton(Yii::t('hipanel:com', 'Send Message'), ['class' => 'btn btn-xl']) ?>
+                        <?php ActiveForm::end(); ?>
                     </div>
                 </div>
             </div>
