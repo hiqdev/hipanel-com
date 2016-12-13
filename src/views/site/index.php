@@ -387,7 +387,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                                 'id' => 'contact-form',
                                 'action' => ['/site/contact'],
                             ]); ?>
-                            <?= $form->field($contactForm, 'name')->textInput(['autofocus' => true, 'placeholder' => $contactForm->getAttributeLabel('name')])->label(false) ?>
+                            <?= $form->field($contactForm, 'name')->textInput(['placeholder' => $contactForm->getAttributeLabel('name')])->label(false) ?>
 
                             <?= $form->field($contactForm, 'email')->textInput(['placeholder' => $contactForm->getAttributeLabel('email')])->label(false) ?>
 
