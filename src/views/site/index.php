@@ -262,7 +262,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'position' => 'Project Lead',
                     'gravatar' => $imagePath . '/team/sol.jpg',
                     'social' => [
-                        'fa-twitter' => '#',
+                        'fa-github' => 'https://github.com/hiqsol',
                         'fa-facebook' => '#',
                         'fa-linkedin' => '#',
                     ],
@@ -274,7 +274,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'position' => 'Lead Backend Developer',
                     'gravatar' => $imagePath . '/team/silver.jpg',
                     'social' => [
-                        'fa-twitter' => '#',
+                        'fa-github' => 'https://github.com/SilverFire',
                         'fa-facebook' => '#',
                         'fa-linkedin' => '#',
                     ],
@@ -286,7 +286,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'position' => 'Web Developer',
                     'gravatar' => $imagePath . '/team/tofid.jpg',
                     'social' => [
-                        'fa-twitter' => '#',
+                        'fa-github' => 'https://github.com/tafid',
                         'fa-facebook' => '#',
                         'fa-linkedin' => '#',
                     ],
@@ -298,8 +298,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'position' => 'QA Lead',
                     'gravatar' => $imagePath . '/team/bladeroot.jpg',
                     'social' => [
-                        'fa-twitter' => '#',
-                        'fa-facebook' => '#',
+                        'fa-github' => 'https://github.com/bladeroot',
                         'fa-linkedin' => '#',
                     ],
                 ]) ?>
