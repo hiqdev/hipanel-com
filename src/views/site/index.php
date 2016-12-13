@@ -378,25 +378,33 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <?php $form = ActiveForm::begin([
-                            'id' => 'contact-form',
-                        ]); ?>
-                        <?= $form->field($contactForm, 'name')->textInput(['autofocus' => true, 'placeholder' => $contactForm->getAttributeLabel('name')])->label(false) ?>
+                        <?php if (Yii::$app->session->getFlash('contactFormSubmitted')) : ?>
+                            <div class="alert alert-success" role="alert">
+                                <h4><?= Yii::t('hipanel:com', 'Thank you!') ?></h4>
+                                <?= Html::tag('p', Yii::t('hipanel:com', 'Your message was successfully sent. Our managers will contact you as soon as possible for further details.')) ?>
+                            </div>
+                        <?php else : ?>
+                            <?php $form = ActiveForm::begin([
+                                'id' => 'contact-form',
+                                'action' => ['/site/contact'],
+                            ]); ?>
+                            <?= $form->field($contactForm, 'name')->textInput(['autofocus' => true, 'placeholder' => $contactForm->getAttributeLabel('name')])->label(false) ?>
 
-                        <?= $form->field($contactForm, 'email')->textInput(['placeholder' => $contactForm->getAttributeLabel('email')])->label(false) ?>
+                            <?= $form->field($contactForm, 'email')->textInput(['placeholder' => $contactForm->getAttributeLabel('email')])->label(false) ?>
 
-                        <?= $form->field($contactForm, 'subject')->textInput(['placeholder' => $contactForm->getAttributeLabel('subject')])->label(false) ?>
+                            <?= $form->field($contactForm, 'subject')->textInput(['placeholder' => $contactForm->getAttributeLabel('subject')])->label(false) ?>
 
-                        <?= $form->field($contactForm, 'body')->textarea(['rows' => 6, 'placeholder' => $contactForm->getAttributeLabel('body')])->label(false) ?>
+                            <?= $form->field($contactForm, 'body')->textarea(['rows' => 6, 'placeholder' => $contactForm->getAttributeLabel('body')])->label(false) ?>
 
-                        <?= $form->field($contactForm, 'verifyCode')->widget(Captcha::className(), [
-                            'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
-                            'options' => [
-                                'placeholder' => $contactForm->getAttributeLabel('verifyCode'),
-                            ]
-                        ])->label(false) ?>
-                        <?= Html::submitButton(Yii::t('hipanel:com', 'Send Message'), ['class' => 'btn btn-xl']) ?>
-                        <?php ActiveForm::end(); ?>
+                            <?= $form->field($contactForm, 'verifyCode')->widget(Captcha::className(), [
+                                'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
+                                'options' => [
+                                    'placeholder' => $contactForm->getAttributeLabel('verifyCode'),
+                                ]
+                            ])->label(false) ?>
+                            <?= Html::submitButton(Yii::t('hipanel:com', 'Send Message'), ['class' => 'btn btn-xl']) ?>
+                            <?php ActiveForm::end(); ?>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
