@@ -128,7 +128,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading"><?php Yii::t('hipanel:com', 'Pricing') ?></h2>
+                <h2 class="section-heading"><?= Yii::t('hipanel:com', 'Pricing') ?></h2>
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
         </div>
