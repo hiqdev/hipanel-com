@@ -24,7 +24,7 @@ return [
         ],
         'thumbnail' => [
             'class' => '\sadovojav\image\Thumbnail',
-            'basePath' => '@app/web',
+            'basePath' => '@hipanel/com/assets/img',
             'cachePath' => '@webroot/assets/thumbnails',
             'options' => [
                 'placeholder' => [
