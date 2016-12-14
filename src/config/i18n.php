@@ -14,5 +14,5 @@ return [
     'sourcePath' => dirname(__DIR__),
     'messagePath' => dirname(__DIR__) . '/messages',
     'sort' => true,
-    'removeUnused' => false,
+    'removeUnused' => true,
 ];
