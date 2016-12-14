@@ -70,7 +70,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'header' => Yii::t('hipanel:com', 'Dashboard'),
                     'subHeader' => Yii::t('hipanel:com', 'All in one...'),
                     'description' => Yii::t('hipanel:com', 'Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!'),
-                    'previewImage' => $imagePath . '/portfolio/dashboard.png',
+                    'previewImage' => Yii::$app->thumbnail->url('/portfolio/dashboard.png', Yii::$app->params['thumb']),
                     'fullImage' => $imagePath . '/portfolio/dashboard.png',
                 ]) ?>
             </div>
@@ -79,7 +79,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'header' => Yii::t('hipanel:com', 'Domain'),
                     'subHeader' => Yii::t('hipanel:com', 'Website Design'),
                     'description' => Yii::t('hipanel:com', ''),
-                    'previewImage' => $imagePath . '/portfolio/domain.png',
+                    'previewImage' => Yii::$app->thumbnail->url('/portfolio/domain.png', Yii::$app->params['thumb']),
                     'fullImage' => $imagePath . '/portfolio/domain.png',
                 ]) ?>
             </div>
