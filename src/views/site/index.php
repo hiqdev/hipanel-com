@@ -76,9 +76,9 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <?= Screenshot::widget([
-                    'header' => Yii::t('hipanel:com', 'Domain'),
+                    'header' => Yii::t('hipanel:com', 'Domains'),
                     'subHeader' => Yii::t('hipanel:com', 'Website Design'),
-                    'description' => Yii::t('hipanel:com', ''),
+//                    'description' => Yii::t('hipanel:com', ''),
                     'previewImage' => Yii::$app->thumbnail->url('/portfolio/domain.png', Yii::$app->params['thumb']),
                     'fullImage' => $imagePath . '/portfolio/domain.png',
                 ]) ?>
@@ -86,8 +86,8 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <?= Screenshot::widget([
                     'header' => Yii::t('hipanel:com', 'Customer support'),
-                    'subHeader' => Yii::t('hipanel:com', ''),
-                    'description' => Yii::t('hipanel:com', ''),
+//                    'subHeader' => Yii::t('hipanel:com', ''),
+//                    'description' => Yii::t('hipanel:com', ''),
                     'previewImage' => Yii::$app->thumbnail->url('/portfolio/tickets.png', Yii::$app->params['thumb']),
                     'fullImage' => $imagePath . '/portfolio/tickets.png',
                 ]) ?>
@@ -96,8 +96,8 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <?= Screenshot::widget([
                     'header' => Yii::t('hipanel:com', 'Client profile'),
-                    'subHeader' => Yii::t('hipanel:com', ''),
-                    'description' => Yii::t('hipanel:com', ''),
+//                    'subHeader' => Yii::t('hipanel:com', ''),
+//                    'description' => Yii::t('hipanel:com', ''),
                     'previewImage' => Yii::$app->thumbnail->url('/portfolio/client.png', Yii::$app->params['thumb']),
                     'fullImage' => $imagePath . '/portfolio/client.png',
                 ]) ?>
@@ -106,7 +106,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                 <?= Screenshot::widget([
                     'header' => Yii::t('hipanel:com', 'Login'),
                     'subHeader' => Yii::t('hipanel:com', 'Social login'),
-                    'description' => Yii::t('hipanel:com', ''),
+//                    'description' => Yii::t('hipanel:com', ''),
                     'previewImage' => Yii::$app->thumbnail->url('/portfolio/login.png', Yii::$app->params['thumb']),
                     'fullImage' => $imagePath . '/portfolio/login.png',
                 ]) ?>
@@ -142,11 +142,11 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'subPrice' => Yii::t('hipanel:com', 'No monthly fee'),
                     'options' => [
                         ['icon' => 'fa-globe', 'label' => Yii::t('hipanel:com', 'One Domain for free. Every next {0} per year', [Yii::$app->formatter->asCurrency('0.50', 'usd')])],
-                        ['icon' => 'fa-cloud', 'label' => Yii::t('hipanel:com', 'One VDS for free. Every next {}$2.99 per month')],
-                        ['icon' => 'fa-server', 'label' => Yii::t('hipanel:com', 'One server for free. Every next $5.99 per month')],
+                        ['icon' => 'fa-cloud', 'label' => Yii::t('hipanel:com', 'One VDS for free. Every next {0}$2.99 per month', [Yii::$app->formatter->asCurrency('2.00', 'usd')])],
+                        ['icon' => 'fa-server', 'label' => Yii::t('hipanel:com', 'One server for free. Every next {0} per month', [Yii::$app->formatter->asCurrency('5.99', 'usd')])],
                         ['icon' => 'fa-user', 'label' => Yii::t('hipanel:com', 'No subclients')],
                         ['icon' => 'fa-shoping-cart', 'label' => Yii::t('hipanel:com', 'Slightly limited DNS and other additional services')],
-                        ['icon' => 'fa-support', 'label' => Yii::t('hipanel:com', '10 minutes for free. More $30.00 per hour.')],
+                        ['icon' => 'fa-support', 'label' => Yii::t('hipanel:com', '10 minutes for free. More {0} per hour.', [Yii::$app->formatter->asCurrency('30.00', 'usd')])],
                     ],
                     'footer' => Yii::t('hipanel:com', 'All the power of our panel for free. With reasonable limitations, sorry. But you can try the panel - no need to pay.')
                 ]) ?>
@@ -163,7 +163,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                         ['icon' => 'fa-server', 'label' => Yii::t('hipanel:com', 'Dedicated Server {0}', [Yii::$app->formatter->asCurrency('4.99', 'usd')])],
                         ['icon' => 'fa-user', 'label' => Yii::t('hipanel:com', 'Up to 999 subclients')],
                         ['icon' => 'fa-shoping-cart', 'label' => Yii::t('hipanel:com', 'Unlimited DNS, Mail and other services')],
-                        ['icon' => 'fa-support', 'label' => Yii::t('hipanel:com', '1 hour included. More $30.00 per hour')],
+                        ['icon' => 'fa-support', 'label' => Yii::t('hipanel:com', '1 hour included. More {0} per hour', [Yii::$app->formatter->asCurrency('30.00', 'usd')])],
                     ],
                     'footer' => Yii::t('hipanel:com', 'All the power of our panel for free. With reasonable limitations, sorry. But you can try the panel - no need to pay.'),
                     'activeClass' => 'pricing-head-active',
@@ -214,7 +214,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     <li class="timeline-inverted">
                         <?= Timeline::widget([
                             'title' => Yii::t('hipanel:com', 'NOVEMBER 2014'),
-                            'subTitle' => Yii::t('hipanel:com', 'An {name} is Born', ['name' => Yii::$app->name]),
+                            'subTitle' => Yii::t('hipanel:com', 'A {name} is Born', ['name' => Yii::$app->name]),
                             'description' => Yii::t('hipanel:com', ''),
                             'image' => $imagePath . '/about/2.jpg',
                         ]) ?>
