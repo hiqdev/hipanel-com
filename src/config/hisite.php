@@ -22,5 +22,18 @@ return [
                 ],
             ],
         ],
+        'thumbnail' => [
+            'class' => '\sadovojav\image\Thumbnail',
+            'basePath' => '@app/web',
+            'cachePath' => '@webroot/assets/thumbnails',
+            'options' => [
+                'placeholder' => [
+                    'type' => 'js',
+                    'random' => false,
+                    'cache' => true
+                ],
+                'quality' => 62,
+            ],
+        ],
     ],
 ];
