@@ -4,6 +4,7 @@
 /* @var $contactForm \hisite\models\ContactForm */
 
 use hipanel\com\Asset;
+use hiqdev\thememanager\widgets\TextPage;
 use hiqdev\themes\agency\widgets\Price;
 use hiqdev\themes\agency\widgets\Screenshot;
 use hiqdev\themes\agency\widgets\Team;
@@ -17,6 +18,7 @@ Asset::register($this);
 $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
 ?>
 
+<?php $page = TextPage::begin() ?>
 <!-- Services Section -->
 <section id="features">
     <div class="container">
@@ -410,3 +412,5 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
         </div>
     </div>
 </section>
+
+<?php TextPage::end() ?>
