@@ -4,7 +4,7 @@ namespace hipanel\com\menus;
 
 use Yii;
 
-class MainMenu extends \hiqdev\menumanager\Menu
+class MainMenu extends \hiqdev\yii2\menus\Menu
 {
     public function items()
     {
