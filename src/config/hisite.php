@@ -34,6 +34,7 @@ return [
     'container' => [
         'definitions' => [
             \hiqdev\thememanager\menus\AbstractMainMenu::class => ['class' => \hipanel\com\menus\MainMenu::class],
+            \hiqdev\thememanager\menus\AbstractFooterMenu::class => ['class' => \hipanel\com\menus\FooterMenu::class],
         ],
     ],
 ];
