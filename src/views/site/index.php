@@ -63,7 +63,11 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading"><?= Yii::t('hipanel:com', 'Screenshots') ?></h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">
+                    <?= Yii::t('hipanel:com', 'Also demo site is available at {link}', [
+                        'link' => Html::a('demo.hipanel.com', 'https://demo.hipanel.com'),
+                    ]) ?>
+                </h3>
             </div>
         </div>
         <div class="row">
@@ -131,7 +135,11 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading"><?= Yii::t('hipanel:com', 'Pricing') ?></h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">
+                    <?= Yii::t('hipanel:com', "Questions? Don't hesitate to contact us at {email}", [
+                        'email' => Html::a(Yii::$app->params['contactEmail'], 'mailto:' . Yii::$app->params['contactEmail']),
+                    ]) ?>
+                </h3>
             </div>
         </div>
         <div class="row">
@@ -155,6 +163,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
             </div>
             <div class="col-md-4">
                 <?= Price::widget([
+                    'activeClass' => 'pricing-head-active',
                     'title' => Yii::t('hipanel:com', 'Easy'),
                     'subTitle' => Yii::t('hipanel:com', 'for resellers'),
                     'price' => Yii::$app->formatter->asCurrency(9.99, 'usd'),
@@ -167,8 +176,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                         ['icon' => 'fa-shoping-cart', 'label' => Yii::t('hipanel:com', 'Unlimited DNS, Mail and other services')],
                         ['icon' => 'fa-support', 'label' => Yii::t('hipanel:com', '1 hour included. More {0} per hour', [Yii::$app->formatter->asCurrency('30.00', 'usd')])],
                     ],
-                    'footer' => Yii::t('hipanel:com', 'All the power of our panel for free. With reasonable limitations, sorry. But you can try the panel - no need to pay.'),
-                    'activeClass' => 'pricing-head-active',
+                    'footer' => Yii::t('hipanel:com', 'Includes personalized site and panel installed at our or your side. Also we provide SSL certificate for your panel and site.'),
                 ]) ?>
             </div>
             <div class="col-md-4">
@@ -186,7 +194,6 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                         ['icon' => 'fa-support', 'label' => Yii::t('hipanel:com', 'Unlimited support')],
                     ],
                     'footer' => Yii::t('hipanel:com', 'Includes personalized site and panel. We\'ll do all the necessary integration of your infrastructure with our panel.'),
-                    'activeClass' => 'pricing-head-active',
                 ]) ?>
             </div>
         </div>
@@ -199,7 +206,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading"><?= Yii::t('hipanel:com', 'About') ?></h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Here is our little story.</h3>
             </div>
         </div>
         <div class="row">
