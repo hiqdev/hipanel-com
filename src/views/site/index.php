@@ -5,6 +5,7 @@
 
 use hipanel\com\Asset;
 use hiqdev\thememanager\widgets\TextPage;
+use hiqdev\themes\agency\widgets\LogoList;
 use hiqdev\themes\agency\widgets\Price;
 use hiqdev\themes\agency\widgets\Screenshot;
 use hiqdev\themes\agency\widgets\Team;
@@ -328,26 +329,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
 <aside class="clients">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <a href="#">
-                    <img src="<?= $imagePath ?>/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="#">
-                    <img src="<?= $imagePath ?>/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="#">
-                    <img src="<?= $imagePath ?>/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="#">
-                    <img src="<?= $imagePath ?>/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                </a>
-            </div>
+            <?= LogoList::widget(['imagePath' => $imagePath]) ?>
         </div>
     </div>
 </aside>

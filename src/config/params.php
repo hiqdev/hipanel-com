@@ -13,5 +13,19 @@ return [
             'width' => 360,
             'height' => 175
         ],
+    ],
+    'logoArray' => [
+        'hiqdev.png' => 'http://hiqdev.com/',
+        'php.png' => 'http://php.net/',
+        'yii.png' => 'http://www.yiiframework.com/',
+        'github.png' => 'https://github.com/hiqdev/hipanel-com',
+        'composer.png' => 'https://getcomposer.org/',
+        'packagist.png' => 'https://packagist.org/',
+        'linux.png' => 'https://en.wikipedia.org/wiki/Linux',
+        'freebsd.png' => 'https://www.freebsd.org/',
+        'apache.png' => 'https://httpd.apache.org/',
+        'nginx.png' => 'https://nginx.org/',
+        'postgresql.png' => 'https://www.postgresql.org/',
+        'mysql.png' => 'https://www.mysql.com/',
     ]
 ];
