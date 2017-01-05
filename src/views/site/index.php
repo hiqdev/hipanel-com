@@ -152,7 +152,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     'subPrice' => Yii::t('hipanel:com', 'No monthly fee'),
                     'options' => [
                         ['icon' => 'fa-globe', 'label' => Yii::t('hipanel:com', 'One Domain for free. Every next {0} per year', [Yii::$app->formatter->asCurrency('0.50', 'usd')])],
-                        ['icon' => 'fa-cloud', 'label' => Yii::t('hipanel:com', 'One VDS for free. Every next {0}$2.99 per month', [Yii::$app->formatter->asCurrency('2.00', 'usd')])],
+                        ['icon' => 'fa-cloud', 'label' => Yii::t('hipanel:com', 'One VDS for free. Every next {0} per month', [Yii::$app->formatter->asCurrency('2.99', 'usd')])],
                         ['icon' => 'fa-server', 'label' => Yii::t('hipanel:com', 'One server for free. Every next {0} per month', [Yii::$app->formatter->asCurrency('5.99', 'usd')])],
                         ['icon' => 'fa-user', 'label' => Yii::t('hipanel:com', 'No subclients')],
                         ['icon' => 'fa-shoping-cart', 'label' => Yii::t('hipanel:com', 'Slightly limited DNS and other additional services')],
