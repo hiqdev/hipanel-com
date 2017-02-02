@@ -215,33 +215,33 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                 <ul class="timeline">
                     <li>
                         <?= Timeline::widget([
-                            'title' => Yii::t('hipanel:com', 'Long time ago...'),
-                            'subTitle' => Yii::t('hipanel:com', 'Our Humble Beginnings'),
-                            'description' => Yii::t('hipanel:com', ''),
+                            'title' => Yii::t('hipanel:com', 'A long time ago'),
+                            'subTitle' => Yii::t('hipanel:com', 'in a galaxy far far away ...'),
+                            'description' => Yii::t('hipanel:com', 'We have been creating different control panels for really long time and got serious expertise in it. '),
                             'image' => $imagePath . '/about/1.jpg',
                         ]) ?>
                     </li>
                     <li class="timeline-inverted">
                         <?= Timeline::widget([
                             'title' => Yii::t('hipanel:com', 'NOVEMBER 2014'),
-                            'subTitle' => Yii::t('hipanel:com', 'A {name} is Born', ['name' => Yii::$app->name]),
-                            'description' => Yii::t('hipanel:com', ''),
+                            'subTitle' => Yii::t('hipanel:com', 'A HiPanel was Born'),
+                            'description' => Yii::t('hipanel:com', 'We have begun to create what later got name HiPanel. Domain name was bought. First repos were created on {link}', ['link' => Html::a('GitHub', 'https://github.com/hiqdev')]),
                             'image' => $imagePath . '/about/2.jpg',
                         ]) ?>
                     </li>
                     <li>
                         <?= Timeline::widget([
-                            'title' => Yii::t('hipanel:com', 'DECEMBER 2014'),
-                            'subTitle' => Yii::t('hipanel:com', 'Transition to Full Service'),
-                            'description' => Yii::t('hipanel:com', ''),
+                            'title' => Yii::t('hipanel:com', 'APRIL 2015'),
+                            'subTitle' => Yii::t('hipanel:com', '0.0.1 version was released'),
+                            'description' => Yii::t('hipanel:com', 'Architecture of the whole system was planned. The work started.'),
                             'image' => $imagePath . '/about/3.jpg',
                         ]) ?>
                     </li>
                     <li class="timeline-inverted">
                         <?= Timeline::widget([
-                            'title' => Yii::t('hipanel:com', 'MARCH 2015'),
-                            'subTitle' => Yii::t('hipanel:com', 'Phase Two Expansion'),
-                            'description' => Yii::t('hipanel:com', ''),
+                            'title' => Yii::t('hipanel:com', 'MARCH 2017'),
+                            'subTitle' => Yii::t('hipanel:com', '0.1.0 version was released'),
+                            'description' => Yii::t('hipanel:com', 'Wide beta testing begun. 160+ packages on GitHub'),
                             'image' => $imagePath . '/about/4.jpg',
                         ]) ?>
                     </li>
@@ -262,7 +262,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading"><?= Yii::t('hipanel:com', 'Our Amazing Team') ?></h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">We are few but roses</h3>
             </div>
         </div>
         <div class="row">
@@ -317,8 +317,8 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <p class="large text-muted">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
-                    laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+                    Besides creating HiPanel we contribute to open source a lot.<br>
+                    And we create our open source <a href="https://hiqdev.com/projects">tools</a> too.
                 </p>
             </div>
         </div>
@@ -339,14 +339,17 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading"><?= Yii::t('hipanel:com', 'Contact Us') ?></h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted"></h3>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
                 <div class="row">
                     <div class="col-md-6 contact-grid">
-                        <p><?= Yii::t('hipanel:com', 'Don\'t be shy, drop us an email and say hello! We are a really nice bunch of people :)') ?></p>
+                        <p>
+                            <?= Yii::t('hipanel:com', 'Don\'t be shy, drop us an email and say hello!') ?><br>
+                            <?= Yii::t('hipanel:com', 'We are a really nice bunch of people :)') ?>
+                        </p>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="contact-right-grid">
