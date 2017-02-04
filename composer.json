@@ -43,7 +43,9 @@
     ],
     "require": {
         "yiisoft/yii2-debug": "~2.0.1",
+        "yiisoft/yii2-swiftmailer": "~2.0.1",
         "hiqdev/hisite-core": "<2.0 || dev-master",
+        "hiqdev/yii2-error-notifier": "<2.0 || dev-master",
         "hiqdev/yii2-theme-agency": "<2.0 || dev-master",
         "hiqdev/yii2-asset-hiqdev": "<2.0 || dev-master",
         "sadovojav/yii2-image-thumbnail": "dev-master"
