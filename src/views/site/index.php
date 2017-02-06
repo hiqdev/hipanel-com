@@ -225,7 +225,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                         <?= Timeline::widget([
                             'title' => Yii::t('hipanel:com', 'NOVEMBER 2014'),
                             'subTitle' => Yii::t('hipanel:com', 'A HiPanel was Born'),
-                            'description' => Yii::t('hipanel:com', 'We have begun to create what later got name HiPanel. Domain name was bought. First repos were created on {link}', ['link' => Html::a('GitHub', 'https://github.com/hiqdev')]),
+                            'description' => Yii::t('hipanel:com', 'We have begun to create what later got name HiPanel. The domain name was bought. First repos were created on {link}', ['link' => Html::a('GitHub', 'https://github.com/hiqdev')]),
                             'image' => $imagePath . '/about/2.jpg',
                         ]) ?>
                     </li>
@@ -262,7 +262,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading"><?= Yii::t('hipanel:com', 'Our Amazing Team') ?></h2>
-                <h3 class="section-subheading text-muted">We are few but roses</h3>
+                <h3 class="section-subheading text-muted">We are <a href="https://hiqdev.com/">HiQDev</a></h3>
             </div>
         </div>
         <div class="row">
