@@ -318,7 +318,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <p class="large text-muted">
                     Besides creating HiPanel we contribute to open source a lot.<br>
-                    And we create our open source <a href="https://hiqdev.com/projects">tools</a> too.
+                    And we create our open source <a href="https://hiqdev.com/pages/projects">tools</a> too.
                 </p>
             </div>
         </div>
