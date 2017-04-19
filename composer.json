@@ -43,11 +43,11 @@
     ],
     "require": {
         "yiisoft/yii2-debug": "~2.0.1",
+        "sadovojav/yii2-image-thumbnail": "dev-master",
         "hiqdev/hisite": "<2.0 || dev-master",
         "hiqdev/yii2-monitoring": "<2.0 || dev-master",
         "hiqdev/yii2-theme-agency": "<2.0 || dev-master",
-        "hiqdev/yii2-asset-hiqdev": "<2.0 || dev-master",
-        "sadovojav/yii2-image-thumbnail": "dev-master"
+        "hiqdev/yii2-asset-hiqdev": "<2.0 || dev-master"
     },
     "require-dev": {
         "hiqdev/hidev-php": "<2.0 || dev-master",
