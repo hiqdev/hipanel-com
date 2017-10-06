@@ -33,10 +33,71 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
             <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading"><?= Yii::t('hipanel:com', 'Domains') ?></h4>
+                <ul class="text-muted text-left">
+                    <li><?= Yii::t('hipanel:com', 'Domains, Contacts, Hosts') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'DNS, Parking, Forwarding') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Transfer lock, WHOIS protection') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'WHOIS lookup') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Custom NSs for expired domains') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Registrars integrations') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'SSL certificates') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Domain drop catching') ?></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-server fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading"><?= Yii::t('hipanel:com', 'Hosting') ?></h4>
+                <ul class="text-muted text-left">
+                    <li><?= Yii::t('hipanel:com', 'Dedicated servers, VDS, Virtual hosting') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Hosting panels integrations') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Equipment inventory: switches, KVMs, PDUs, IPMI') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'IPs inventory, Traffic, Graphs, Monitoring') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Apache, NGINX, BIND, TinyDNS, Postfix') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Accounts, Domains, Cron, Mails, Databases') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Software installation and management') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Stock inventory, history, orders, prices') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Backups') ?></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-money fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading"><?= Yii::t('hipanel:com', 'Billing') ?></h4>
+                <ul class="text-muted text-left">
+                    <li><?= Yii::t('hipanel:com', 'Reselling system') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Tariff plans and subscriptions') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Coupons and Discounts') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Payment gateways integrations') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Multi-currency support') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'PDF invoices with own templates') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Employees, Partners') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Files and Documents') ?></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
                     </span>
                 <h4 class="service-heading"><?= Yii::t('hipanel:com', 'SaaS and Open Source') ?></h4>
-                <p class="text-muted"><?= Yii::t('hipanel:com', 'Choose what you prefer. Nothing to install cloud based SaaS solution. Or open source solution installed at your side.') ?></p>
+                <ul class="text-muted text-left">
+                    <li><?= Yii::t('hipanel:com', 'Nothing to install cloud based SaaS solution') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Or open source solution installed at your side') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Open source development') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Code available on GitHub') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Lots of integrations') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Clean API to create custom modules and integrations') ?></li>
+                </ul>
             </div>
             <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -44,7 +105,15 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
                 <h4 class="service-heading"><?= Yii::t('hipanel:com', 'Responsive Design and Friendly UX') ?></h4>
-                <p class="text-muted"><?= Yii::t('hipanel:com', 'Modern and responsive design. Nice to look on every device. Easy to use for every task.') ?></p>
+                <ul class="text-muted text-left">
+                    <li><?= Yii::t('hipanel:com', 'Modern and responsive design') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Nice to look on every device') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Easy to use for every task') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Easy personalizing and theming') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Social login') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Batch operations') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'User support: tickets, answer templates, FAQ') ?></li>
+                </ul>
             </div>
             <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -52,7 +121,15 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
                 <h4 class="service-heading"><?= Yii::t('hipanel:com', 'Security and reliability') ?></h4>
-                <p class="text-muted"><?= Yii::t('hipanel:com', 'OAuth2, ABAC, Backup and more ...') ?></p>
+                <ul class="text-muted text-left">
+                    <li><?= Yii::t('hipanel:com', 'OAuth2 autorization') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Role-based Access Control') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Full activity logging') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Multi-factor authorization') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Time-based One-time Password (aka Google Authenticator)') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Email and Phone verification') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Blacklists') ?></li>
+                </ul>
             </div>
         </div>
     </div>
