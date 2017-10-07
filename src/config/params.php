@@ -1,9 +1,13 @@
 <?php
 
 return [
+    'site.title'    => 'Next generation billing and control panel',
+    'site.subtitle' => 'Control all your services from a single place',
+
     'adminEmail'   => 'support@hipanel.com',
     'contactEmail' => 'contact@hipanel.com',
     'supportEmail' => 'support@hipanel.com',
+
     'thumb' => [
         'thumbnail' => [
             'width' => 360,
@@ -14,6 +18,7 @@ return [
             'height' => 175
         ],
     ],
+
     'logoArray' => [
         'hiqdev.png' => 'http://hiqdev.com/',
         'php.png' => 'http://php.net/',
