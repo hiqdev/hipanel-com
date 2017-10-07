@@ -118,7 +118,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
             <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-shield fa-stack-1x fa-inverse"></i>
                     </span>
                 <h4 class="service-heading"><?= Yii::t('hipanel:com', 'Security and reliability') ?></h4>
                 <ul class="text-muted text-left">
