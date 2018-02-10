@@ -46,6 +46,7 @@
         "mito/yii2-sentry": "^1.0",
         "sadovojav/yii2-image-thumbnail": "dev-master",
         "hiqdev/hisite": "<2.0 || dev-master",
+        "hiqdev/yii2-module-pages": "<2.0 || dev-master",
         "hiqdev/yii2-monitoring": "<2.0 || dev-master",
         "hiqdev/yii2-theme-agency": "<2.0 || dev-master",
         "hiqdev/yii2-asset-hiqdev": "<2.0 || dev-master"
