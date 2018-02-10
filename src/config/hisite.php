@@ -18,7 +18,7 @@ return [
             ],
         ],
         'thumbnail' => [
-            'class' => '\sadovojav\image\Thumbnail',
+            'class' => \sadovojav\image\Thumbnail::class,
             'basePath' => '@hipanel/com/assets/img',
             'cachePath' => '@webroot/assets/thumbnails',
             'options' => [
