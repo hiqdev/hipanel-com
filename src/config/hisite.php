@@ -38,4 +38,12 @@ return [
             \hiqdev\thememanager\menus\AbstractNavbarMenu::class => ['class' => \hipanel\com\menus\NavbarMenu::class],
         ],
     ],
+    'modules' => [
+        'pages' => [
+            'storage' => [
+                'class' => \creocoder\flysystem\LocalFilesystem::class,
+                'path' => '@hipanel/com/pages',
+            ],
+        ],
+    ],
 ];
