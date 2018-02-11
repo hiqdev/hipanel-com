@@ -1,0 +1,29 @@
+# Contents
+
+- User features
+    - Domains
+        - Availability check
+            - Similar domains recomendations
+        - Purchase
+        - Transfer
+        - Name servers
+        - WHOIS protection
+        - Transfer protection
+        - DNS
+    - SSL certificates
+    - Hosting
+        - Servers
+            - Dedicated
+            - VDS
+            - CDN
+        - Servers
+        - WHOIS protection
+        - DNS
+    - Billing
+        - Tariff plans
+        - PDF invoices
+        - DNS
+- Architecture overview
+    - Components
+    - Diagrams
+    - Technologies used
