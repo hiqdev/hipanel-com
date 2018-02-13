@@ -70,28 +70,49 @@
         - Payment gateways integrations
             - 50+ available with [Omnipay]
         - Multi-currency support
-        - PDF invoices
+        - PDF invoices generation with own templates
+    - User management
+        - Different types of access:
+            - client, reseller
+            - support, admin, manager
+        - Contacts
+            - Contact data verification
+        - Documents and files upload and download
+    - User support
+        - Ticketing system
+        - Answer templates
+        - FAQ
+        - Documentation
 - Architecture overview
+    - Usability
+        - Modern and responsive design
+        - Batch operations
     - Components
         - Backend (API) server
         - Frontend server
+        - User site
+            - Demo at https://hiqloud.com/
         - Identity and access management server
             - Login, registration, email confirmation, password restore
             - OAuth2 server
             - RBAC - Role Based Access Control
             - multi-factor authentication with:
-                - Google Authenticator compatible TOTP
-                - limited access from user allowed IPs only
+                - TOTP (Time-based One-time Password) Google Authenticator compatible
+                - Limited access from user allowed IPs only
             - Social login with Facebook, Google, VK, LinkedIn, GitHub, Live, Yandex
             - Full activity logging with searching and reporting (planned)
         - System components diagrams
     - Technologies used
-        - PHP (latest 7.2)
+        - PHP (7.0 - 7.2), Nginx, PHP-FPM
         - Yii2 framework (latest)
-        - PostgreSQL
+        - PostgreSQL (9 - 10)
+        - Docker, docker-compose
     - Extensibility, customization and integrations
+        - Easy branding
+        - Easy theming with Yii2 themes
     - Licensing
-        - Mostly open source available at [GitHub]
+        - Mostly open source - BSD license
+        - Available at [GitHub]
 
 [Omnipay]:      http://omnipay.thephpleague.com/
 [GitHub]:       https://github.com/hiqdev/hipanel
