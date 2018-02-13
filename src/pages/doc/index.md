@@ -28,9 +28,12 @@
             - Dedicated
             - VDS
             - CDN
-        - Servers
-        - WHOIS protection
-        - DNS
+        - Hosted objects
+            - Accounts
+            - Domains
+            - Cronjobs
+            - Mails
+            - Databases
     - Infrastructure management
         - Equipment inventory
             - Network switches
@@ -42,17 +45,31 @@
             - Models and model groups
             - Details with serial numbers
             - Movements history
-                - RMA
+                - Order, installation, deinstallation, RMA, trash
             - Orders
                 - Suppliers
                 - Prices
             - Stocks management
                 - Remainders
-                - Required limits
+                - Required minimum limits
+        - IP addresses and network inventory
+        - Resources consumption accounting
+            - All kinds of resources consumption:
+                - Traffic (IP, switch, domain)
+                - Disk usage, backup usage
+                - IP addresses number
+            - Traffic graphs
+        - Integration with monitoring
     - Billing
+        - Very extensible billing system
+        - Reselling
         - Payments
             - Detailed payments
         - Tariff plans
+        - Coupons and Discounts
+        - Payment gateways integrations
+            - 50+ available with [Omnipay]
+        - Multi-currency support
         - PDF invoices
 - Architecture overview
     - Components
@@ -69,5 +86,12 @@
             - Full activity logging with searching and reporting (planned)
         - System components diagrams
     - Technologies used
+        - PHP (latest 7.2)
+        - Yii2 framework (latest)
+        - PostgreSQL
     - Extensibility, customization and integrations
     - Licensing
+        - Mostly open source available at [GitHub]
+
+[Omnipay]:      http://omnipay.thephpleague.com/
+[GitHub]:       https://github.com/hiqdev/hipanel
