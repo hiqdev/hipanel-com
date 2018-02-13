@@ -3,14 +3,23 @@
 - User features
     - Domains
         - Availability check
-            - Similar domains recomendations
-        - Purchase
+            - Similar domains suggestion
+        - Registration
         - Transfer
-        - Name servers
+            - Bulk transfer
+        - Name servers management: creation and assignment
+            - Default contacts for new domains
+        - Contacts management: creation and assignment
+            - Default contacts for new domains
         - WHOIS protection
         - Transfer protection
         - DNS
     - SSL certificates
+        - Issue
+        - Contacts reusable from domains
+        - Domain control validation methods:
+            - email
+            - DNS (automatically when our DNS)
     - Hosting
         - Servers
             - Dedicated
@@ -20,10 +29,13 @@
         - WHOIS protection
         - DNS
     - Billing
+        - Payments
+            - Detailed payments
         - Tariff plans
         - PDF invoices
-        - DNS
 - Architecture overview
     - Components
     - Diagrams
     - Technologies used
+    - Extensibility, customization and integrations
+    - Licensing
