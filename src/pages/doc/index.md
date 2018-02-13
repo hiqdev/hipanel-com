@@ -4,16 +4,19 @@
     - Domains
         - Availability check
             - Similar domains suggestion
+            - WHOIS lookup
         - Registration
         - Transfer
             - Bulk transfer
         - Name servers management: creation and assignment
             - Default contacts for new domains
+            - Custom NSs for expired domains
         - Contacts management: creation and assignment
             - Default contacts for new domains
         - WHOIS protection
         - Transfer protection
         - DNS
+        - Email notifications
     - SSL certificates
         - Issue
         - Contacts reusable from domains
@@ -28,6 +31,24 @@
         - Servers
         - WHOIS protection
         - DNS
+    - Infrastructure management
+        - Equipment inventory
+            - Network switches
+            - KVM
+            - PDU - Power Distribution Units
+            - Racks and units
+            - IPMI
+        - Hardware management (stock)
+            - Models and model groups
+            - Details with serial numbers
+            - Movements history
+                - RMA
+            - Orders
+                - Suppliers
+                - Prices
+            - Stocks management
+                - Remainders
+                - Required limits
     - Billing
         - Payments
             - Detailed payments
@@ -35,7 +56,18 @@
         - PDF invoices
 - Architecture overview
     - Components
-    - Diagrams
+        - Backend (API) server
+        - Frontend server
+        - Identity and access management server
+            - Login, registration, email confirmation, password restore
+            - OAuth2 server
+            - RBAC - Role Based Access Control
+            - multi-factor authentication with:
+                - Google Authenticator compatible TOTP
+                - limited access from user allowed IPs only
+            - Social login with Facebook, Google, VK, LinkedIn, GitHub, Live, Yandex
+            - Full activity logging with searching and reporting (planned)
+        - System components diagrams
     - Technologies used
     - Extensibility, customization and integrations
     - Licensing
