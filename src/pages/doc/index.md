@@ -8,17 +8,20 @@
         - Registration
         - Transfer
             - Bulk transfer
+        - Automated renewal
         - Name servers management: creation and assignment
             - Default contacts for new domains
             - Custom NSs for expired domains
-        - Contacts management: creation and assignment
+        - Contacts management (WHOIS data)
+            - Creation and assignment
             - Default contacts for new domains
+        - Domain data syncing
         - WHOIS protection
         - Transfer protection
         - DNS
         - Email notifications
     - SSL certificates
-        - Issue
+        - Issue, renewal, cancel
         - Contacts reusable from domains
         - Domain control validation methods:
             - email
@@ -71,6 +74,8 @@
             - 50+ available with [Omnipay]
         - Multi-currency support
         - PDF invoices generation with own templates
+        - Payment reminders and overdue notices
+        - Taxes/VAT
     - User management
         - Different types of access:
             - client, reseller
@@ -94,6 +99,7 @@
             - Demo at https://hiqloud.com/
         - Identity and access management server
             - Login, registration, email confirmation, password restore
+            - Signle Sign-On
             - OAuth2 server
             - RBAC - Role Based Access Control
             - multi-factor authentication with:
