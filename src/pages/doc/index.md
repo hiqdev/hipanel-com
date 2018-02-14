@@ -85,7 +85,11 @@
         - Documents and files upload and download
     - User support
         - Ticketing system
-        - Answer templates
+            - Ticket assignment to user or support/manager
+            - File attachment
+            - Answer templates
+            - Customizable email notifications
+            - Answer with email
         - FAQ
         - Documentation
 - Architecture overview
@@ -93,6 +97,7 @@
         - Modern and responsive design
         - Batch operations
     - Components
+        - Modular architecture
         - Backend (API) server
         - Frontend server
         - User site
