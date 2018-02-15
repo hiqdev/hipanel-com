@@ -1,4 +1,12 @@
 <?php
+/**
+ * hipanel.com site
+ *
+ * @link      https://github.com/hiqdev/hipanel-com
+ * @package   hipanel-com
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016-2018, HiQDev (http://hiqdev.com/)
+ */
 
 return [
     'site.title'    => 'Next generation billing and control panel',
@@ -15,7 +23,7 @@ return [
         ],
         'placeholder' => [
             'width' => 360,
-            'height' => 175
+            'height' => 175,
         ],
     ],
 
@@ -32,5 +40,5 @@ return [
         'nginx.png' => 'https://nginx.org/',
         'postgresql.png' => 'https://www.postgresql.org/',
         'mysql.png' => 'https://www.mysql.com/',
-    ]
+    ],
 ];

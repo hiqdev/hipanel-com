@@ -1,12 +1,11 @@
 <?php
-
-/*
- * Agency Theme for hiqdev/yii2-thememanager
+/**
+ * hipanel.com site
  *
- * @link      https://github.com/hiqdev/yii2-theme-agency
- * @package   yii2-theme-agency
+ * @link      https://github.com/hiqdev/hipanel-com
+ * @package   hipanel-com
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2016-2018, HiQDev (http://hiqdev.com/)
  */
 
 return [

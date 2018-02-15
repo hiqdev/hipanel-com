@@ -236,7 +236,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                         ['icon' => 'fa-shoping-cart', 'label' => Yii::t('hipanel:com', 'Slightly limited DNS and other additional services')],
                         ['icon' => 'fa-support', 'label' => Yii::t('hipanel:com', '10 minutes for free. More {0} per hour.', [Yii::$app->formatter->asCurrency('30.00', 'usd')])],
                     ],
-                    'footer' => Yii::t('hipanel:com', 'All the power of our panel for free. With reasonable limitations, sorry. But you can try the panel - no need to pay.')
+                    'footer' => Yii::t('hipanel:com', 'All the power of our panel for free. With reasonable limitations, sorry. But you can try the panel - no need to pay.'),
                 ]) ?>
             </div>
             <div class="col-md-4">
@@ -470,7 +470,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                                 'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
                                 'options' => [
                                     'placeholder' => $contactForm->getAttributeLabel('verifyCode'),
-                                ]
+                                ],
                             ])->label(false) ?>
                             <?= Html::submitButton(Yii::t('hipanel:com', 'Send Message'), ['class' => 'btn btn-xl']) ?>
                             <?php ActiveForm::end(); ?>

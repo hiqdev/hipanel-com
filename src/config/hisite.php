@@ -1,4 +1,12 @@
 <?php
+/**
+ * hipanel.com site
+ *
+ * @link      https://github.com/hiqdev/hipanel-com
+ * @package   hipanel-com
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016-2018, HiQDev (http://hiqdev.com/)
+ */
 
 return [
     'id' => 'hipanel.com',
@@ -25,7 +33,7 @@ return [
                 'placeholder' => [
                     'type' => 'js',
                     'random' => false,
-                    'cache' => true
+                    'cache' => true,
                 ],
                 'quality' => 62,
             ],
