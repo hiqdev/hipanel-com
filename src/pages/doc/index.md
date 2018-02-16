@@ -18,7 +18,8 @@
         - Domain data syncing
         - WHOIS protection
         - Transfer protection
-        - DNS
+        - Holding and freezing
+        - DNS management
         - Email notifications
     - SSL certificates
         - Issue, renewal, cancel
@@ -69,7 +70,7 @@
         - Payments
             - Detailed payments
         - Tariff plans
-        - Coupons and Discounts
+        - Coupons and discounts
         - Payment gateways integrations
             - 50+ available with [Omnipay]
         - Multi-currency support
@@ -80,8 +81,10 @@
         - Different types of access:
             - client, reseller
             - support, admin, manager
+            - precise control of permissions with RBAC
         - Contacts
             - Contact data verification
+            - Attached documents
         - Documents and files upload and download
     - User support
         - Ticketing system
@@ -95,16 +98,19 @@
 - Architecture overview
     - Usability
         - Modern and responsive design
+        - Use of AJAX, to reduce latency and server reloads
         - Batch operations
-    - Components
-        - Modular architecture
+    - Modular architecture:
         - Backend (API) server
-        - Frontend server
+            - Relational database (PostgreSQL)
+            - Modern secure and fast web framework (Yii2)
+        - EPP servers
+        - Frontend
         - User site
             - Demo at https://hiqloud.com/
         - Identity and access management server
             - Login, registration, email confirmation, password restore
-            - Signle Sign-On
+            - Single Sign-On
             - OAuth2 server
             - RBAC - Role Based Access Control
             - multi-factor authentication with:
@@ -113,11 +119,12 @@
             - Social login with Facebook, Google, VK, LinkedIn, GitHub, Live, Yandex
             - Full activity logging with searching and reporting (planned)
         - System components diagrams
-    - Technologies used
+        - Reliable backup strategy
+    - Technologies used:
         - PHP (7.0 - 7.2), Nginx, PHP-FPM
         - Yii2 framework (latest)
         - PostgreSQL (9 - 10)
-        - Docker, docker-compose
+        - Linux, Docker, docker-compose
     - Extensibility, customization and integrations
         - Easy branding
         - Easy theming with Yii2 themes
