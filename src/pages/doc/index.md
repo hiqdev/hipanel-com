@@ -26,7 +26,7 @@
         - Contacts reusable from domains
         - Domain control validation methods:
             - email
-            - DNS (automatically when our DNS)
+            - DNS (automatically for DNS under control)
     - Hosting
         - Servers
             - Dedicated
@@ -41,11 +41,11 @@
     - Infrastructure management
         - Equipment inventory
             - Network switches
-            - KVM
+            - KVM - Keyboard Video Mouse
             - PDU - Power Distribution Units
             - Racks and units
-            - IPMI
-        - Hardware management (stock)
+            - IPMI - Intelligent Platform Management Interface
+        - Hardware inventory (stock)
             - Models and model groups
             - Details with serial numbers
             - Movements history
