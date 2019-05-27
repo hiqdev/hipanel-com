@@ -16,6 +16,13 @@ return [
     'contactEmail' => 'contact@hipanel.com',
     'supportEmail' => 'support@hipanel.com',
 
+    'socialLinks.links' =>
+    array (
+      'email' => 'mailto:support@hiqdev.com',
+      'twitter' => 'https://twitter.com/hipanel',
+      'facebook' => 'https://www.facebook.com/hipanel',
+    ),
+
     'thumb' => [
         'thumbnail' => [
             'width' => 360,
