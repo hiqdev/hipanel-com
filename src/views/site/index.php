@@ -58,7 +58,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     <li><?= Yii::t('hipanel:com', 'Hosting panels integrations') ?></li>
                     <li><?= Yii::t('hipanel:com', 'Equipment inventory: switches, KVMs, PDUs, IPMI') ?></li>
                     <li><?= Yii::t('hipanel:com', 'IPs inventory, Traffic, Graphs, Monitoring') ?></li>
-                    <li><?= Yii::t('hipanel:com', 'Apache, NGINX, BIND, TinyDNS, Postfix') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'Apache, NGINX, BIND, TinyDNS, PowerDNS, Postfix') ?></li>
                     <li><?= Yii::t('hipanel:com', 'Accounts, Domains, Cron, Mails, Databases') ?></li>
                     <li><?= Yii::t('hipanel:com', 'Software installation and management') ?></li>
                     <li><?= Yii::t('hipanel:com', 'Stock inventory, history, orders, prices') ?></li>
@@ -122,7 +122,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     </span>
                 <h4 class="service-heading"><?= Yii::t('hipanel:com', 'Security and reliability') ?></h4>
                 <ul class="text-muted text-left">
-                    <li><?= Yii::t('hipanel:com', 'OAuth2 autorization') ?></li>
+                    <li><?= Yii::t('hipanel:com', 'OAuth2 autorization/Single Sign-On') ?></li>
                     <li><?= Yii::t('hipanel:com', 'Role-based Access Control') ?></li>
                     <li><?= Yii::t('hipanel:com', 'Full activity logging') ?></li>
                     <li><?= Yii::t('hipanel:com', 'Multi-factor authorization') ?></li>
@@ -208,6 +208,7 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
     </div>
 </section>
 
+<?php /*
 <section id="pricing">
     <div class="container">
         <div class="row">
@@ -273,6 +274,29 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
                     ],
                     'footer' => Yii::t('hipanel:com', 'Includes personalized site and panel. We\'ll do all the necessary integration of your infrastructure with our panel.'),
                 ]) ?>
+            </div>
+        </div>
+    </div>
+</section>
+ */ ?>
+
+<section id="pricing">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading"><?= Yii::t('hipanel:com', 'Pricing') ?></h2>
+                <h3 class="section-subheading text-muted" style="margin-bottom: 20px">
+                    <?= Yii::t('hipanel:com', "All core functionality is free.") ?>
+                    <br><br>
+                    <?= Yii::t('hipanel:com', "The code is open source and licensed under BSD license.") ?>
+                    <br><br>
+                    <?= Yii::t('hipanel:com', "We sell only additional features and support.") ?>
+                    <br><br>
+                    <br><br>
+                    <?= Yii::t('hipanel:com', "Questions? Don't hesitate to contact us at {email}", [
+                        'email' => Html::a(Yii::$app->params['contactEmail'], 'mailto:' . Yii::$app->params['contactEmail']),
+                    ]) ?>
+                </h3>
             </div>
         </div>
     </div>
