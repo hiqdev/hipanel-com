@@ -152,8 +152,8 @@ $imagePath = Yii::$app->assetManager->publish('@hipanel/com/assets/img')[1];
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <?= Screenshot::widget([
                     'header' => Yii::t('hipanel:com', 'Dashboard'),
-                    'subHeader' => Yii::t('hipanel:com', 'All in one...'),
-                    'description' => Yii::t('hipanel:com', 'Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!'),
+                    'subHeader' => Yii::t('hipanel:com', 'All in one'),
+                    'description' => Yii::t('hipanel:com', 'Control all your services from a single place'),
                     'previewImage' => Yii::$app->thumbnail->url('/portfolio/dashboard.png', Yii::$app->params['thumb']),
                     'fullImage' => $imagePath . '/portfolio/dashboard.png',
                 ]) ?>

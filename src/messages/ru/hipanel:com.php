@@ -69,7 +69,7 @@ return [
     'Unlimited subclients' => '',
     'Unlimited support' => '',
     'Up to 999 subclients' => '',
-    'Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!' => '',
+    'Control all your services from a single place' => 'Единый центр управления всеми вашими сервисами',
     'VDS, CDN and other cloud services {0} per month' => '',
     'Website Design' => '',
     'Your message was successfully sent. Our managers will contact you as soon as possible for further details.' => '',
